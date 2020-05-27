@@ -1,7 +1,7 @@
 node{
-   def tomcatIp = '192.168.226.136'
+   def tomcatIp = '192.168.226.154'
    def tomcatUser = 'tomcat'
-   def stopTomcat = "ssh ${tomcatUser}@${tomcatIp} /opt/webview/deva-web/webapptomcat/apache-tomcat-9.0.33/bin/shutdown.sh"
+   def stopTomcat = "ssh ${tomcatUser}@${tomcatIp} /opt/webview/deva-web/webapptomcat/apache-tomcat-9.0.33/bin/shutdown.sh "
    def startTomcat = "ssh ${tomcatUser}@${tomcatIp} /opt/webview/deva-web/webapptomcat/apache-tomcat-9.0.33/bin/startup.sh"
    def copyWar = "scp -o StrictHostKeyChecking=no target/myweb.war ${tomcatUser}@${tomcatIp}:/opt/webview/deva-web/webapptomcat/apache-tomcat-9.0.33/webapps/"
    
