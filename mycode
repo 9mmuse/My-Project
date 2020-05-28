@@ -1,5 +1,5 @@
 pipeline{
-	agentany	
+	agent any	
 	   stage{
 	      stage('one'){
 			 steps { echo 'Hi, this is Mr Muse from here'
