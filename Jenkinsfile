@@ -10,7 +10,7 @@ node{
     def extractTomcat = "ssh ${tomcatUser}@${tomcatIp} tar -xvf /opt/webview/deva-web/webapptomcat/apache-tomcat-9.0.33.tar.gz -C /opt/webview/deva-web/webapptomcat/"
    stage('SCM Checkout'){
         git branch: 'master', 
-	        credentialsId: '9mmuse,
+	        credentialsId: '9mmuse',
 	        url: 'https://github.com/9mmuse/myweb'
    }
    stage('Maven Build'){
