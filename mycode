@@ -1,5 +1,3 @@
-# My(CODE)
-
 pipeline{
 	agentany	
 	   stage{
