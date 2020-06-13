@@ -18,7 +18,7 @@ node{
 		sh "${mvnHome}/bin/mvn clean package"
    }
    stage('Email Notification'){
-      mail bcc: '', body: '''Hi World  Welcome to jenkins email alerts
+      mail bcc: '', body: '''Hi My World  Welcome to jenkins email alerts
       Thanks
       Hari''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: '9mmuse@gmail.com'
   } 
